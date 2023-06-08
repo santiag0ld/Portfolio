@@ -1,7 +1,5 @@
-  /* ABOUT ME */
+//about me
   .main_aboutme {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, center, center, 40px);
     padding:10% 20% 10% 20%;
   }

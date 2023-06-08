@@ -18,10 +18,7 @@ a {
 
 
   .welcome_text {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column,center,center,0);
     text-align: center;
     padding: 150px 300px 150px 300px;
     font-size: x-large;

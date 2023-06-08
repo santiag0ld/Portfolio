@@ -1,6 +1,5 @@
- /* CONTACT */
- .contact h2 {
-   display: flex;
-   justify-content: center;
-   margin-top: 2rem;
- }
+//contact
+#contact-form {
+  @include flex (column, center, center, 100px);
+  padding-top: 20px;
+}
