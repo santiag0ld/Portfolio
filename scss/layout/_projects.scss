@@ -1,0 +1,46 @@
+  /* PROJECTS */
+  .main_projects {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 20%;
+
+
+    .projects_title {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-self: center;
+      padding: 0px 80px 0px 80px;
+      font-size: xx-large;
+    }
+
+    .project_box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 10px;
+
+      .box {
+        float: left;
+        width: 33%;
+        text-align: center;
+
+        &:hover {
+          background-color: rgb(212, 173, 252);
+          color: rgb(12, 19, 79);
+        }
+
+        p {
+          padding-top: 10px;
+          text-align: center;
+        }
+
+
+
+        img {
+          width: 100%;
+        }
+
+      }
+    }
+  }

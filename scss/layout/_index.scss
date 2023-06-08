@@ -1,0 +1,46 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: $main-color;
+  color: $font-color;
+}
+
+a {
+  color: $font-color;
+  text-decoration: none;
+}
+
+/* INDEX */
+.welcome_main {
+
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 200px 50px 100px 50px;
+
+
+  .welcome_text {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 150px 300px 150px 300px;
+    font-size: x-large;
+    font-weight: 100;
+
+    h1 {
+      margin-left: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .welcome_img {
+    filter: brightness(50%);
+    display: flex;
+    position: absolute;
+    padding-top: 50px;
+    width: 140%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}

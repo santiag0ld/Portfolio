@@ -1,0 +1,32 @@
+/* FOOTER */
+footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(12, 19, 79);
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 10px;
+
+  
+        :hover {
+         background-color: rgb(212, 173, 252);
+         color: rgb(12, 19, 79);
+        }
+  
+        li {
+         display: flex;
+         justify-content: center;
+         padding: 10px;
+        }
+  
+        ul {
+         padding-left: 0rem;
+         margin-bottom: 0rem;
+        }
+  }
