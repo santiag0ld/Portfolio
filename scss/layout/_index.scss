@@ -1,6 +1,8 @@
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: $main-color;
+  height: 100%;
+  background-image: linear-gradient($main-color, $footer-color);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: $font-color;
 }
 
@@ -9,18 +11,29 @@ a {
   text-decoration: none;
 }
 
-/* INDEX */
 .welcome_main {
-
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
   padding: 200px 50px 100px 50px;
 
+  .welcome_buttons {
+    padding-left: 30px;
+
+    img {
+      padding: 10px;
+
+      &:hover {
+        transform: scale(1.5, 1.5);
+        transition: 1s;
+      }
+    }
+  }
 
   .welcome_text {
-    @include flex(column,center,center,0);
+    @include flex(column, center, center, 0);
     text-align: center;
-    padding: 150px 300px 150px 300px;
+    padding: 0px 200px 40px 200px;
     font-size: x-large;
     font-weight: 100;
 
@@ -35,9 +48,10 @@ a {
     display: flex;
     position: absolute;
     padding-top: 50px;
-    width: 140%;
+    width: 110%;
     top: 0;
     right: 0;
     z-index: -1;
+
   }
 }

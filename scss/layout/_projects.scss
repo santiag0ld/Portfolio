@@ -1,46 +1,59 @@
 //projects
-  .main_projects {
+.main_projects {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 20%;
+
+  .projects_title {
     display: flex;
-    flex-direction: row-reverse;
-    padding-bottom: 20%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: center;
+    padding: 0px 80px 0px 80px;
+    font-size: xx-large;
+  }
 
+  .project_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
 
-    .projects_title {
+    .box {
       display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-self: center;
-      padding: 0px 80px 0px 80px;
-      font-size: xx-large;
-    }
+      align-items: center;
+      justify-content: center;
+      border: 3px $hover-color solid;
+      border-radius: 2%;
+      margin: 10px 0px 10px 0px;
+      float: left;
+      width: 33%;
 
-    .project_box {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding-top: 10px;
-
-      .box {
-        float: left;
-        width: 33%;
+      .box_title {
+        background-color: $footer-color;
+        border: 2px solid;
+        border-color: $hover-color;
+        border-radius: 2%;
+        width: fit-content;
+        padding: 2px;
         text-align: center;
+        align-items: center;
+        font-weight: bold;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.45s;
 
         &:hover {
-          background-color: rgb(212, 173, 252);
-          color: rgb(12, 19, 79);
+          cursor: pointer;
+          opacity: 100%;
         }
-
-        p {
-          padding-top: 10px;
-          text-align: center;
-        }
-
-
-
-        img {
-          width: 100%;
-        }
-
       }
+
+      img {
+        width: 100%;
+        border-radius: 3px;
+      }
+
     }
   }
+}

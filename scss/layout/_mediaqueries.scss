@@ -6,19 +6,34 @@
     .welcome_main {
       flex-direction: column;
       align-items: center;
-      margin: 1px;
-      padding-top: 250px;
-
+      padding: 0px 0px 150px 0px;
 
       .welcome_text {
         align-items: center;
-        padding: 0;
+        padding: 0px 100px 0px 100px;
       }
 
       .welcome_img {
+        position: sticky;
         padding: 0;
         width: 100%;
+      }
 
+      .welcome_buttons {
+        padding: 0;
+      }
+    }
+
+    footer {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .copyright {
+        padding: 0;
+      }
+
+      .icons_footer {
+        padding: 0;
       }
     }
 
@@ -30,7 +45,6 @@
       .projects_title {
         padding: 0px;
         margin: 60px 0px 30px 0px;
-
       }
 
       .project_box {
@@ -50,5 +64,25 @@
         grid-template-rows: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
         padding-bottom: 50%;
       }
+    }
+
+    .main_aboutme {
+
+      h2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: xx-large;
+        padding-left: 50px;
+      }
+
+      aboutme_text {
+        font-weight: 100;
+      }
+    }
+
+    #contact-form {
+      padding: 0px 10px 150px 10px;
+      height: 100%;
     }
   }

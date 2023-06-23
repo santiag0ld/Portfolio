@@ -1,5 +1,14 @@
 //about me
-  .main_aboutme {
+.main_aboutme {
+  height: 100%;
+
+  .aboutme_text {
     @include flex(column, center, center, 40px);
-    padding:10% 20% 10% 20%;
+    padding: 5% 20% 20% 20%;
   }
+
+  h2 {
+    @include flex(column, center, center, 0px);
+    padding-top: 50px;
+  }
+}

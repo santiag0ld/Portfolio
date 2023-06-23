@@ -1,5 +1,6 @@
 //contact
 #contact-form {
   @include flex (column, center, center, 100px);
-  padding-top: 20px;
+  padding: 0px 0px 100px 0px;
+  height: 100vh;
 }
